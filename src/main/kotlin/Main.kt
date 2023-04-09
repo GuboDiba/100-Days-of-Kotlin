@@ -1,9 +1,9 @@
 fun main() {
   tax(32,120000)
 
-//    passwordS()
-//    passwordS()
-//    passwordS()
+    passwordS()
+    passwordS()
+    passwordS()
 
 
 }
@@ -45,16 +45,17 @@ fun tax(age:Int,income:Int){
    }
 }
 
+//Day2
 //Write a program in Kotlin that asks the user to enter a password.
 // If the password is "password123", print "Access granted".
 // If the password is incorrect, print "Access denied".
-//fun passwordS(){
-//   print("enter password")
-//    val pass= readLine()
-//    if (pass=="password123"){
-//        println("Access granted")
-//    }else{
-//        println("Access denied")
-//    }
-//
-//}
+fun passwordS(){
+   print("enter password")
+    val pass= readLine()
+    if (pass=="password123"){
+        println("Access granted")
+    }else{
+        println("Access denied")
+    }
+
+}
