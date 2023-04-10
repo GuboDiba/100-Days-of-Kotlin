@@ -5,6 +5,11 @@ fun main() {
     passwordS()
     passwordS()
 
+    val calc=Calculator()
+    calc.addition(34,23)
+    calc.substraction(12,5)
+    calc.division(14.1,7)
+    calc.division(12.2,23)
 
 }
 //Day1
@@ -47,7 +52,7 @@ fun tax(age:Int,income:Int){
 
 //Day2
 //Write a program in Kotlin that asks the user to enter a password.
-// If the password is "password123", print "Access granted".
+// If the password is "", print "Access granted".
 // If the password is incorrect, print "Access denied".
 fun passwordS(){
    print("enter password")
@@ -58,4 +63,19 @@ fun passwordS(){
         println("Access denied")
     }
 
+}
+//Day 3
+open class Calculator{
+    fun addition(num1:Int, num2:Int):Int{
+        return(num1+num2)
+    }
+    fun substraction(num1:Int, num2:Int):Int{
+        return num1-num2
+    }
+    fun multiplication(num1:Int, num2:Int):Int{
+        return num1*num2
+    }
+    fun division(num1:Double, num2:Int):Double{
+        return num1/num2
+    }
 }
